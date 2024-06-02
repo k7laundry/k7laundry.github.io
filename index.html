@@ -1,9 +1,397 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
-    
+    <meta charset="utf-8" />
+    <title>K7 Laundry</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
   </head>
-  <body>
-    <h1>Hello World</h1>
+
+  <body style="background-color: #e8e9eb">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white px-3 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+          <h1 class="text-primary m-0"><img src="img/logo.png" height="50px" width="50px" alt="logo k7 laundry" />K7 Laundry</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item display-2 nav-link">Home</a>
+            <a href="#about" class="nav-item nav-link">Tentang</a>
+            <a href="#service" class="nav-item nav-link">Layanan</a>
+            <a href="#testimoni" class="nav-item nav-link">Testimoni</a>
+            <a href="#order" class="nav-item nav-link">Pesan</a>
+            <a href="#kontak" class="nav-item nav-link">Kontak Kami</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Carousel Start -->
+      <div class="header-carousel owl-carousel">
+        <div class="header-carousel-item">
+          <img src="img/carousel-1.png" class="img-fluid w-100" alt="header-img-1" />
+          <div class="carousel-caption">
+            <div class="carousel-caption-content p-3">
+              <h1 class="display-1 text-capitalize text-white mb-4">K7 Laundry</h1>
+              <p class="mb-5 fs-5">
+                K7 Laundry adalah layanan laundry profesional yang berlokasi di Kota Jakarta Utara. Motto K7 Laundry adalah mengutamakan kebersihan, kecepatan, dan kepuasan pelanggan, dengan komitmen pada kualitas dan kenyamanan.
+              </p>
+              <a class="btn btn-primary rounded-pill text-white py-3 fs-5 px-5" href="#order">Mulai Pesan</a>
+            </div>
+          </div>
+        </div>
+        <div class="header-carousel-item">
+          <img src="img/carousel-2.png" class="img-fluid w-100" alt="header-img-2" />
+          <div class="carousel-caption">
+            <div class="carousel-caption-content p-3">
+              <h1 class="display-1 text-capitalize text-white mb-4">K7 Laundry</h1>
+              <p class="mb-5 fs-5 animated slideInDown">
+                K7 Laundry adalah layanan laundry profesional yang berlokasi di Kota Jakarta Utara. Motto K7 Laundry adalah mengutamakan kebersihan, kecepatan, dan kepuasan pelanggan, dengan komitmen pada kualitas dan kenyamanan.
+              </p>
+              <a class="btn btn-primary rounded-pill text-white py-3 fs-5 px-5" href="#order">Mulai Pesan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel End -->
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- About Start -->
+    <section id="about" class="pt-5">
+      <div class="container-fluid about py-5">
+        <div class="container py-5">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="about-img pb-5 ps-5">
+                <img src="img/about.png" class="img-fluid rounded w-100" style="object-fit: cover" alt="img-about" />
+                <div class="about-experience">4 Tahun Pengalaman</div>
+              </div>
+            </div>
+            <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
+              <div class="section-title text-start mb-5">
+                <h2 class="sub-title pe-3 mb-0 fw-bolder" style="font-weight: bolder">Tentang Kami</h2>
+                <h1 class="display-5 mb-4">Kami menawarkan layanan yang terbaik serta profesional.</h1>
+                <p class="mb-4 fs-5" style="color: black; font-weight: 600">Kami berkomitmen untuk memberikan pelayanan terbaik dan profesional yang dirancang untuk kenyamanan pelanggan. Adapun layanan unggulan kami:</p>
+                <div class="mb-4" style="font-weight: 600">
+                  <p class="text-primary fs-5"><i class="fa fa-check text-primary me-2"></i> Bisa ditunggu.</p>
+                  <p class="text-primary fs-5"><i class="fa fa-check text-primary me-2"></i> Harga ekonomis.</p>
+                  <p class="text-primary fs-5"><i class="fa fa-check text-primary me-2"></i> Antar jemput gratis.</p>
+                  <p class="text-primary fs-5"><i class="fa fa-check text-primary me-2"></i> Bersih, higenis, dan wangi.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About End -->
+
+    <!-- Services Start -->
+    <section id="service" class="pt-3 bg-white">
+      <div class="container-fluid service py-5">
+        <div class="container py-5">
+          <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="sub-style">
+              <h2 class="sub-title px-3 mb-0 fw-bolder">Layanan Kami</h2>
+            </div>
+            <h1 class="display-5 mb-4 mt-3">Layanan jasa yang kami tawarkan</h1>
+            <p class="mb-0 fw-bolder" style="color: black">
+              Tarif jasa layanan yang kami tawarkan memiliki perbedaan harga berdasarkan jenis jasa yang kami tawarkan, kesulitan barang yang dicuci, jenis barang yang dicuci, dan jumlah barang yang dicuci.
+            </p>
+          </div>
+
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="service-item rounded">
+                <div class="d-flex flex-column align-items-center rounded-top service-img justify-content-center text-center bg-info-darken-5 px-4" style="height: 230px; background-color: rgb(168, 168, 168)">
+                  <div class="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4" style="width: 150px; height: 150px">
+                    <i class="fa fa-3x fa-cloud-sun content-img"></i>
+                  </div>
+                </div>
+                <div class="service-content rounded-bottom bg-light p-4">
+                  <div class="service-content-inner">
+                    <h3 class="mb-4 fw-bolder">Cuci Cepat</h3>
+                    <p class="mb-4" style="color: black">Cucian yang langsung dikerjakan sehari itu juga, sehingga dapat dikatakan bisa ditunggu</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="service-item rounded">
+                <div class="d-flex flex-column align-items-center rounded-top service-img justify-content-center text-center bg-info-darken-5 px-4" style="height: 230px; background-color: rgb(168, 168, 168)">
+                  <div class="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4" style="width: 150px; height: 150px">
+                    <i class="fa fa-3x fa-burn content-img"></i>
+                  </div>
+                </div>
+                <div class="service-content rounded-bottom bg-light p-4">
+                  <div class="service-content-inner">
+                    <h3 class="mb-4 fw-bolder">Cuci Regular</h3>
+                    <p class="mb-4" style="color: black">Cuci saja, sehingga pakaian bersih dan harum. Durasi waktu 2 hari selesai</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="service-item rounded">
+                <div class="d-flex flex-column align-items-center rounded-top service-img justify-content-center text-center bg-info-darken-5 px-4" style="height: 230px; background-color: rgb(168, 168, 168)">
+                  <div class="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4" style="width: 150px; height: 150px">
+                    <i class="fa fa-3x fa-tshirt content-img"></i>
+                  </div>
+                </div>
+                <div class="service-content rounded-bottom bg-light p-4">
+                  <div class="service-content-inner">
+                    <h3 class="mb-4 fw-bolder">Cuci Rapih</h3>
+                    <p class="mb-4" style="color: black">Cuci ditambah dengan setrika, sehingga baju bersih, harum, dan rapih. Durasi waktu 2 hari selesai</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="service-item rounded">
+                <div class="d-flex flex-column align-items-center rounded-top service-img justify-content-center text-center bg-info-darken-5 px-4" style="height: 230px; background-color: rgb(168, 168, 168)">
+                  <div class="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4" style="width: 150px; height: 150px">
+                    <i class="fas fa-3x fa-soap content-img"></i>
+                  </div>
+                </div>
+                <div class="service-content rounded-bottom bg-light p-4">
+                  <div class="service-content-inner">
+                    <h3 class="mb-4 fw-bolder">Cuci Lain</h3>
+                    <p class="mb-4" style="color: black">Menyediakan jasa cuci selain pakaian, seperti: cuci karpet, selimut, boneka, dll</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services End -->
+
+    <!-- Testimonial Start -->
+    <section id="testimoni">
+      <div class="container-fluid testimonial py-5 wow zoomInDown" data-wow-delay="0.1s">
+        <div class="container py-5">
+          <div class="section-title mb-5">
+            <div class="sub-style">
+              <h2 class="sub-title px-3 mb-3 fw-bolder text-white">Testimoni</h2>
+            </div>
+            <h3 class="display-5 mt-4 mb-4">Beberapa review pelanggan yang telah menggunakan jasa kami</h3>
+          </div>
+          <div class="testimonial-carousel owl-carousel">
+            <div class="testimonial-item">
+              <div class="testimonial-inner p-5">
+                <div class="testimonial-inner-img mb-4">
+                  <img src="img/testimonial-img.jpg" class="img-fluid rounded-circle" alt="" />
+                </div>
+                <p class="text-white fs-7">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nemo facilis tempora esse explicabo sed! Dignissimos quia ullam pariatur blanditiis sed voluptatum. Totam aut quidem laudantium tempora. Minima, saepe
+                  earum!
+                </p>
+                <div class="text-center">
+                  <h5 class="mb-2">John Abraham</h5>
+                  <p class="mb-2 text-white-50">New York, USA</p>
+                  <div class="d-flex justify-content-center">
+                    <i class="fas fa-star text-secondary"></i>
+                    <i class="fas fa-star text-secondary"></i>
+                    <i class="fas fa-star text-secondary"></i>
+                    <i class="fas fa-star text-secondary"></i>
+                    <i class="fas fa-star text-secondary"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-item">
+              <div class="testimonial-inner p-5">
+                <div class="testimonial-inner-img mb-4">
+                  <img src="img/testimonial-img.jpg" class="img-fluid rounded-circle" alt="" />
+                </div>
+                <p class="text-white fs-7">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nemo facilis tempora esse explicabo sed! Dignissimos quia ullam pariatur blanditiis sed voluptatum. Totam aut quidem laudantium tempora. Minima, saepe
+                  earum!
+                </p>
+                <div class="text-center">
+                  <h5 class="mb-2">John Abraham</h5>
+                  <p class="mb-2 text-white-50">New York, USA</p>
+                  <div class="d-flex justify-content-center">
+                    <i class="fas fa-star text-secondary"></i>
+                    <i class="fas fa-star text-secondary"></i>
+                    <i class="fas fa-star text-secondary"></i>
+                    <i class="fas fa-star text-secondary"></i>
+                    <i class="fas fa-star text-secondary"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-item">
+              <div class="testimonial-inner p-5">
+                <div class="testimonial-inner-img mb-4">
+                  <img src="img/testimonial-img.jpg" class="img-fluid rounded-circle" alt="" />
+                </div>
+                <p class="text-white fs-7">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nemo facilis tempora esse explicabo sed! Dignissimos quia ullam pariatur blanditiis sed voluptatum. Totam aut quidem laudantium tempora. Minima, saepe
+                  earum!
+                </p>
+                <div class="text-center">
+                  <h5 class="mb-2">John Abraham</h5>
+                  <p class="mb-2 text-white-50">New York, USA</p>
+                  <div class="d-flex justify-content-center">
+                    <i class="fas fa-star text-secondary"></i>
+                    <i class="fas fa-star text-secondary"></i>
+                    <i class="fas fa-star text-secondary"></i>
+                    <i class="fas fa-star text-secondary"></i>
+                    <i class="fas fa-star text-secondary"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial End -->
+
+    <!-- Order Start -->
+    <section id="order" class="py-5">
+      <div class="container-fluid py-xxl-5 my-xxl-5">
+        <div class="container py-xxl-5">
+          <div class="row">
+            <div class="col-lg-7 my-xxl-5 py-xxl-5 pr-lg-5">
+              <h1 class="mb-4 fw-bold display-4">Tunggu apa lagi?</h1>
+              <p class="fs-5 fw-bold" style="color: black">Sudah banyak orang yang telah mencoba jasa kami dan merasa puas. Jangan banyak pikir, karena cucian kamu menunggu untuk dicuci. Langsung saja tekan tombol pesan dibawah ini!</p>
+              <a target="_self" class="btn btn-primary rounded-1 text-white btn-order py-3 fs-5 px-5" href="https://wa.me/+628558589536">
+                <div class="row">
+                  <div class="col" style="padding-top: 5px">
+                    <img class="logo-whatsapp-white" src="img/icon-whatsapp.png" alt="logo WhatsApp" width="50px">
+                    <img class="logo-whatsapp-blue" src="img/icon-whatsapp-1.png" alt="logo WhatsApp" width="50px">
+                  </div>
+                  <div class="col d-flex d-block justify-content-center fs-4 fw-bold">
+                    <p style="margin-left: -10px; padding-top: 15px" class="text-order">WhatsApp</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-5">
+              <div class="d-flex flex-column align-items-center justify-content-center bg-primary h-100 py-5 px-3">
+                <h1 class="display-1 text-center text-white mb-3">4 <span class="display-6">Tahun Lebih</span></h1>
+                <h1 class="text-white text-center">Pengalaman Dibidang Laundry</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Order Finish -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 pl-0 ml-0 wow fadeIn bg-info" data-wow-delay="0.2s">
+      <div class="container py-5">
+        <h4 class="mb-4 text-white">Contact Info</h4>
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <div class="rounded h-100">
+                <iframe
+                  class="rounded w-100"
+                  style="height: 300px"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1015550.6953958449!2d105.681804546875!3d-6.131385800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1f6fb3fa10cf%3A0x1b0cf0850ca1b820!2sK7%20Laundry!5e0!3m2!1sen!2sid!4v1717356169771!5m2!1sen!2sid"
+                  width="600"
+                  height="400"
+                  style="border: 0"
+                  allowfullscreen="true"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm-1">
+            <div class="footer-item d-flex flex-column">
+              <i class="fa fa-map-marker-alt me-2 mb-3"></i>
+              <i class="fas fa-envelope me-2 mb-3"></i>
+              <i class="fas fa-phone me-2 mb-3"></i>
+            </div>
+          </div>
+          <div class="col col-md-3">
+            <div class="footer-item d-flex flex-column">
+              <a href="">123 Street, New York, USA</a>
+              <a href="">info@example.com</a>
+              <a href=""> info@example.com</a>
+              <a href="">+012 345 67890</a>
+              <a href="" class="mb-3">+012 345 67890</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-md-0">
+            <span class="text-white"
+              ><a href="#"><i class="fas fa-copyright text-light me-2"></i>K7 Laundry</a>, All right reserved.</span
+            >
+          </div>
+          <div class="col-md-6 text-center text-md-end text-white">
+            <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+            <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+            <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+            Designed By <a class="border-bottom" href="">Desman Saputra</a> Distributed By <a class="border-bottom" href="">ThemeWagon & htmlcodex</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
   </body>
 </html>
